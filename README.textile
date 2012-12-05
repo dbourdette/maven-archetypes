@@ -3,6 +3,9 @@ h1. Maven archetypes
 Fast project bootstrap with some maven archetypes.
 See all archetypes below for details. 
 
+Archetypes are built using online doc about "maven archtype plugin":http://maven.apache.org/archetype/maven-archetype-plugin/
+See doc about "archetype descriptor":http://maven.apache.org/archetype/archetype-models/archetype-descriptor/archetype-descriptor.html
+
 h2. installing
 
 This will install all artefacts in local repository.
