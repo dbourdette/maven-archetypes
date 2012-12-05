@@ -64,6 +64,34 @@ $ mvn archetype:generate -DarchetypeGroupId=com.github.dbourdette.maven-archetyp
 
 h3. contents
 
+<pre>
+acme
+├── pom.xml
+└── src
+    └── main
+        ├── java
+        │   └── acme
+        │       └── gwt
+        │           ├── Application.gwt.xml
+        │           ├── client
+        │           │   ├── Application.java
+        │           │   └── service
+        │           │       ├── ApplicationService.java
+        │           │       └── ApplicationServiceAsync.java
+        │           └── server
+        │               └── service
+        │                   └── ApplicationServiceImpl.java
+        └── webapp
+            ├── WEB-INF
+            │   ├── spring-context.xml
+            │   └── web.xml
+            └── index.html
+</pre>
+
+It's pretty easy to add new services by adding correct classes in client and server packages.
+
+We are using "gwtrpc-spring":http://code.google.com/p/gwtrpc-spring/ but probably "spring4gwt":http://code.google.com/p/spring4gwt/ can be used too.
+
 h3. testing generated project
 
 simply run 
