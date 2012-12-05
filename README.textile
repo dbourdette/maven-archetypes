@@ -13,7 +13,7 @@ $ cd maven-archetypes
 $ mvn install
 </pre>
 
-h2. archetype : spring mvc
+h2. archetype : spring-mvc
 
 h3. contents
 
@@ -40,7 +40,7 @@ acme/
 h3. usage
 
 <pre>
-$ mvn archetype:generate -DarchetypeGroupId=com.github.dbourdette.maven-archetypes -DarchetypeArtifactId=xxx -DarchetypeVersion=1.0.0-SNAPSHOT
+$ mvn archetype:generate -DarchetypeGroupId=com.github.dbourdette.maven-archetypes -DarchetypeArtifactId=spring-mvc -DarchetypeVersion=1.0.0-SNAPSHOT
 </pre>
 
 h3. testing generated project
