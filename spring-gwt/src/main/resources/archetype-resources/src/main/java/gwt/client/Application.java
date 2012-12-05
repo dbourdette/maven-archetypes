@@ -9,8 +9,8 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 
-import acme.gwt.client.service.ApplicationService;
-import acme.gwt.client.service.ApplicationServiceAsync;
+import ${package}.gwt.client.service.ApplicationService;
+import ${package}.gwt.client.service.ApplicationServiceAsync;
 
 public class Application implements EntryPoint {
 	private Label label = new Label();
