@@ -101,8 +101,8 @@ simply run
 gwt plugin uses a jetty server running on 8080.
 Index page should be available with hosted mode on http://127.0.0.1:8888/index.html?gwt.codesvr=127.0.0.1:9997
 
-Gwt hosted mode uses a plugin for web browser. See http://gwt.google.com/samples/MissingPlugin/MissingPlugin.html
+Gwt hosted mode uses a plugin for web browser (use "missing plugin page":http://gwt.google.com/samples/MissingPlugin/MissingPlugin.html)
 
 h3. more info
 
-see "gwt doc":https://developers.google.com/web-toolkit/ and "gwt plugin doc":http://mojo.codehaus.org/gwt-maven-plugin/
+see "gwt doc":https://developers.google.com/web-toolkit/ and "maven gwt plugin doc":http://mojo.codehaus.org/gwt-maven-plugin/
