@@ -54,7 +54,7 @@ simply run
 
 h2. archetype : spring-gwt
 
-This will create a web app with gwt using spring for rpc serices
+This will create a web app with gwt using spring for rpc services
 
 h3. usage
 
