@@ -2,32 +2,27 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xmlns:tx="http://www.springframework.org/schema/tx"
-       xmlns:p="http://www.springframework.org/schema/p"
-       xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
-http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
-http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
-http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-    <!-- Découverte des contrôleurs -->
+    <!-- scan for controllers -->
     <context:component-scan base-package="${package}.web.controller" />
 
-    <!-- Création de composants classiques pour spring mvc -->
+    <!-- loads commons components for a mvc app -->
     <mvc:annotation-driven />
 
-    <!-- Forwarde les demandes de fichiers statiques vers la servlet par défaut du conteneur -->
+    <!-- forwards to static files -->
     <mvc:default-servlet-handler />
 
-    <!-- Définition de la Locale pour les opération de formattage -->
+    <!-- french Locale as default -->
     <bean id="localeResolver" class="org.springframework.web.servlet.i18n.FixedLocaleResolver">
         <property name="defaultLocale" value="fr_FR" />
     </bean>
 
-    <!-- Configuration de la technologie de rendu  -->
+    <!-- using jsp with jstl and standard jsp location  -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
         <property name="prefix" value="/WEB-INF/jsp/" />

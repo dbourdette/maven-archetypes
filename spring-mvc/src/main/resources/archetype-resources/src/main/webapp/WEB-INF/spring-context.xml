@@ -9,4 +9,6 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     <!-- Support des annotations -->
     <context:annotation-config />
 
+    <!-- Put your services and common components here -->
+
 </beans>
