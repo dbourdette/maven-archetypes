@@ -102,7 +102,7 @@ simply run ```mvn gwt:run```
 gwt plugin uses a jetty server running on 8080.
 (index page should be available http://127.0.0.1:8888/index.html?gwt.codesvr=127.0.0.1:9997 on hosted mode)
 
-Gwt hosted mode uses a plugin for web browser (use "missing plugin page":http://gwt.google.com/samples/MissingPlugin/MissingPlugin.html)
+Gwt hosted mode uses a plugin for web browser (use [missing plugin page](http://gwt.google.com/samples/MissingPlugin/MissingPlugin.html))
 
 **more info**
 
