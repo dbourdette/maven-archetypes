@@ -70,7 +70,8 @@ simply run
 
 <pre>mvn gwt:run</pre>
 
-gwt plugin uses a jetty server running on 8080. Index page should be available with hosted mode on http://127.0.0.1:8888/index.html?gwt.codesvr=127.0.0.1:9997
+gwt plugin uses a jetty server running on 8080.
+Index page should be available with hosted mode on http://127.0.0.1:8888/index.html?gwt.codesvr=127.0.0.1:9997
 
 h3. more info
 
