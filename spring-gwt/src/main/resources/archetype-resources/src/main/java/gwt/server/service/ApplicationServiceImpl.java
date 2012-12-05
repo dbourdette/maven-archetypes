@@ -2,7 +2,7 @@ package ${package}.gwt.server.service;
 
 import org.springframework.stereotype.Service;
 
-import acme.gwt.client.service.ApplicationService;
+import ${package}.gwt.client.service.ApplicationService;
 
 @Service
 public class ApplicationServiceImpl implements ApplicationService {
