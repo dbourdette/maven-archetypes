@@ -1,24 +1,50 @@
 h1. Maven archetypes
 
-fast project bootstrap with some maven archetypes
+Fast project bootstrap with some maven archetypes.
+See all archetypes below for details. 
 
 h2. installing
 
-````
+This will install all artefacts in local repository.
+
+<pre>
 $ git clone git@github.com:dbourdette/maven-archetypes.git
 $ cd maven-archetypes
 $ mvn install
-````
+</pre>
 
-h2. usage
+h2. archetype : spring mvc
 
-````
-$ mvn archetype:generate
-    -DarchetypeGroupId=com.github.dbourdette.maven-archetypes
-    -DarchetypeArtifactId=xxx
-    -DarchetypeVersion=1.0.0-SNAPSHOT
-````
+h3. contents
 
-h2. testing generated project
+This will create a web app based on spring mvc 3.x
 
-simply run ```mvn tomcat:run```
+<pre>
+acme/
+├── pom.xml
+└── src
+    └── main
+        ├── java
+        │   └── acme
+        │       └── web
+        │           └── IndexController.java
+        └── webapp
+            └── WEB-INF
+                ├── jsp
+                │   └── index.jsp
+                ├── spring-context.xml
+                ├── spring-servlet.xml
+                └── web.xml
+</pre>
+
+h3. usage
+
+<pre>
+$ mvn archetype:generate -DarchetypeGroupId=com.github.dbourdette.maven-archetypes -DarchetypeArtifactId=xxx -DarchetypeVersion=1.0.0-SNAPSHOT
+</pre>
+
+h3. testing generated project
+
+simply run 
+
+<pre>mvn tomcat:run</pre>
