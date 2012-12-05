@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module rename-to="application">
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.google.gwt.i18n.I18N"/>
+
+    <!-- set locale used (used for date time formating and localization) -->
+    <extend-property name="locale" values="fr"/>
+
+    <entry-point class='${package}.gwt.client.Application'/>
+
+    <set-property name="locale" value="fr" />
+
+    <set-property name="user.agent" value="gecko1_8,safari,ie6,ie8,ie9,opera" />
+</module>

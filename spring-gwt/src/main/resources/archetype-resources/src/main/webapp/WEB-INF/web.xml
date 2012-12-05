@@ -1,0 +1,29 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <display-name>${artifactId}</display-name>
+
+    <!-- Spring main context -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/spring-context.xml</param-value>
+    </context-param>
+
+    <!-- gwtrpc-spring servlet for rpc service -->
+    <servlet>
+        <servlet-name>rpcDispatcher</servlet-name>
+        <servlet-class>org.gwtrpcspring.RemoteServiceDispatcher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpcDispatcher</servlet-name>
+        <url-pattern>*.rpc</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
