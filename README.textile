@@ -69,3 +69,9 @@ h3. testing generated project
 simply run 
 
 <pre>mvn gwt:run</pre>
+
+gwt plugin uses a jetty server running on 8080. Index page should be available with hosted mode on http://127.0.0.1:8888/index.html?gwt.codesvr=127.0.0.1:9997
+
+h3. more info
+
+see "gwt doc":https://developers.google.com/web-toolkit/ and "gwt plugin doc":http://mojo.codehaus.org/gwt-maven-plugin/
