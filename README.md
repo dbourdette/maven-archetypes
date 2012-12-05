@@ -58,13 +58,13 @@ This will create a web app with gwt using spring for rpc services
 
 h3. usage
 
-<pre>
+```
 $ mvn archetype:generate -DarchetypeGroupId=com.github.dbourdette.maven-archetypes -DarchetypeArtifactId=spring-gwt -DarchetypeVersion=1.0.0-SNAPSHOT
 ```
 
 h3. contents
 
-<pre>
+```
 acme
 ├── pom.xml
 └── src
